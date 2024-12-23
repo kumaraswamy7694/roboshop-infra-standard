@@ -4,34 +4,34 @@ pipeline {
     stages {
         stage('Init') {
             steps {
-             sh'''
-                 terraform plan
-             '''
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                sh'''
+                sh '''
                     terraform plan
                 '''
             }
         }
+        stage('Deploy to Staging') {  // Renamed this stage to avoid duplication
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy to Production') {  // Renamed this stage to avoid duplication
+            steps {
+                sh '''
+                    terraform apply
+                '''
+            }
+        }
     }
-        post { 
+    
+    post {
         always { 
-            echo 'I will always run weather the job is run or not'
+            echo 'I will always run whether the job is run or not'
         }
-        success{
-            echo ' i will run only when job is success'
+        success {
+            echo 'I will run only when the job is successful'
         }
-        failure{
-            echo 'i will run when failure'
+        failure {
+            echo 'I will run when there is a failure'
         }
     }
-
 }
