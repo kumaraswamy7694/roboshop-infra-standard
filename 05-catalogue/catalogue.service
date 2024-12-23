@@ -1,0 +1,26 @@
+<<<<<<< HEAD
+[Unit]
+Description = Catalogue Service
+
+[Service]
+User=roboshop
+Environment=MONGO=true
+Environment=MONGO_URL="mongodb://mongodb.kumaraswamy.xyz:27017/catalogue"
+ExecStart=/bin/node /app/server.js
+SyslogIdentifier=catalogue
+
+[Install]
+=======
+[Unit]
+Description = Catalogue Service
+
+[Service]
+User=roboshop
+Environment=MONGO=true
+Environment=MONGO_URL="mongodb://mongodb.kumaraswamy.xyz:27017/catalogue"
+ExecStart=/bin/node /app/server.js
+SyslogIdentifier=catalogue
+
+[Install]
+>>>>>>> 98c8a0ec3b321c5063076b9a24dab275f339acd6
+WantedBy=multi-user.target
