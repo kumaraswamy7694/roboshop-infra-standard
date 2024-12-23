@@ -1,0 +1,6 @@
+<<<<<<< HEAD
+*.exe filter=lfs diff=lfs merge=lfs -text
+=======
+*.exe filter=lfs diff=lfs merge=lfs -text
+>>>>>>> 98c8a0ec3b321c5063076b9a24dab275f339acd6
+path/to/large-file filter=lfs diff=lfs merge=lfs -text
