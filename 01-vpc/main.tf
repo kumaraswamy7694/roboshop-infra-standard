@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 module "vpc" {
   source               = "../../terraform-aws-vpc-advance"
   project_name         = var.project_name #"roboshop" instead of hard coding we are keeping in variables.tf
@@ -28,4 +28,4 @@ module "vpc" {
   default_route_table_id = data.aws_vpc.default.main_route_table_id
   default_vpc_cidr       = data.aws_vpc.default.cidr_block
 }
->>>>>>> 98c8a0ec3b321c5063076b9a24dab275f339acd6
+
