@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 terraform {
   required_providers {
     aws = {
@@ -60,4 +60,4 @@ provider "aws" {
   region = "us-east-1"
 }
 
->>>>>>> 98c8a0ec3b321c5063076b9a24dab275f339acd6
+
