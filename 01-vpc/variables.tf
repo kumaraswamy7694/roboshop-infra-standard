@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 variable "project_name" {
   default = "roboshop"
 
@@ -64,4 +64,4 @@ variable "private_subnet_cidr" {
 variable "database_subnet_cidr" {
   default = ["10.0.21.0/24", "10.0.22.0/24"]
 }
->>>>>>> 98c8a0ec3b321c5063076b9a24dab275f339acd6
+
